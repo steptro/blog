@@ -14,7 +14,7 @@
 
     @foreach($posts as $post)
         <article class="mb-8 border-lighter rounded shadow p-5">
-            <a class="no-underline leading-loose text-grey-darkest mb-4" href="{{ route('blog.show', $post->slug) }}">
+            <a class="no-underline leading-loose mb-4" href="{{ route('blog.show', $post->slug) }}">
                 <h2 class="leading-normal text-2xl lg:text-3xl mb-0">{{ $post->title }}</h2>
 
                 <div class="flex text-sm font-light text-gray-400">
@@ -23,7 +23,7 @@
                     <span class="">{{ ceil(str_word_count(strip_tags($post->body)) / 200) }} min read</span>
                 </div>
 
-                <p class="mt-2 leading-3">{!! $post->excerpt !!}</p>
+                <p class="mt-2 leading-tight">{!! $post->excerpt !!}</p>
 
                 <div class="flex mt-4">
                     @foreach($post->tags as $tag)
