@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [WinkController::class, 'index'])->name('blog.index');
 Route::get('/blog/{slug}', [WinkController::class, 'show'])->name('blog.show');
+Route::get('/preview/{slug}', [WinkController::class, 'preview'])->name('blog.preview');
 
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/setup', [HomeController::class, 'setup'])->name('setup');

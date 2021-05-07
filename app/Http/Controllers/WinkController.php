@@ -26,6 +26,15 @@ class WinkController extends Controller
         return view('blog.show', compact('post'));
     }
 
+    public function preview($slug)
+    {
+        $post = WinkPost::with('tags')
+            ->whereSlug($slug)
+            ->firstOrFail();
+
+        return view('blog.show', compact('post'));
+    }
+
     public function page($slug)
     {
         $page = WinkPage::whereSlug($slug)
