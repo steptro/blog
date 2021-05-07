@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\WinkController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [WinkController::class, 'index'])->name('blog.index');
+Route::get('/blog/{slug}', [WinkController::class, 'show'])->name('blog.show');
+
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/setup', [HomeController::class, 'setup'])->name('setup');
