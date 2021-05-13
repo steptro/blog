@@ -13,7 +13,7 @@
     </div>
 
     @foreach($posts as $post)
-        <article class="mb-8 border-lighter rounded shadow p-5">
+        <article class="mb-8 rounded shadow-xl border p-5">
             <a class="no-underline leading-loose mb-4" href="{{ route('blog.show', $post->slug) }}">
                 <h2 class="leading-normal text-2xl lg:text-3xl mb-0">{{ $post->title }}</h2>
 

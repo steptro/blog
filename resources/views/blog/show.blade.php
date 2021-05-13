@@ -14,3 +14,9 @@
         </article>
     </section>
 @endsection
+
+@push('scripts')
+    <script>
+        hljs.highlightAll();
+    </script>
+@endpush
