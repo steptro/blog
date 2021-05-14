@@ -76,7 +76,7 @@ return [
     |
     */
 
-    'preview_path' => '/blog/{postSlug}',
+    'preview_path' => '/preview/{postSlug}',
 
     'editor' => [
 
