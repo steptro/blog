@@ -18,9 +18,9 @@
                 <h2 class="leading-normal text-2xl lg:text-3xl mb-0">{{ $post->title }}</h2>
 
                 <div class="flex text-sm font-light text-gray-400">
-                    <span class="">{!! $post->publish_date->formatLocalized('%e %B %Y') !!}</span>
+                    <span>Updated: {!! $post->updated_at->formatLocalized('%e %B %Y') !!}</span>
                     <span class="mx-2">-</span>
-                    <span class="">{{ ceil(str_word_count(strip_tags($post->body)) / 200) }} min read</span>
+                    <span>{{ ceil(str_word_count(strip_tags($post->body)) / 200) }} min read</span>
                 </div>
 
                 <p class="mt-2 leading-tight">{!! $post->excerpt !!}</p>
