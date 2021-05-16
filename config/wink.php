@@ -91,7 +91,7 @@ return [
         |
         */
 
-        'default' => null,
+        'default' => 'markdown',
 
     ],
 ];
