@@ -7,7 +7,7 @@
     <meta name="og:description" content="{{ $post->excerpt }}" />
     <meta name="og:image" content="{{ url('/') . $post->featured_image }}" />
     <meta name="og:url" content="{{ url()->full() }}" />
-    <meta name="twitter:card" content="{{ $post->excerpt }}" />
+    <meta name="twitter:card" content="summary_large_image" />
 @endpush
 
 @push('stylesheets')
