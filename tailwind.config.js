@@ -9,7 +9,7 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontFamily: {
-            'blog': ['Merriweather', ...defaultTheme.fontFamily.serif]
+            'sans': ['Inter', ...defaultTheme.fontFamily.sans],
         },
         extend: {
             colors: {
