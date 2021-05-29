@@ -8,6 +8,7 @@
     <meta property="og:image" content="{{ url('/') . $post->featured_image }}" />
     <meta property="og:url" content="{{ url()->full() }}" />
     <meta property="og:site_name" content="stephantromer.dev" />
+    <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
 @endpush
 
