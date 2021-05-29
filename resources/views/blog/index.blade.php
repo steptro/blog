@@ -28,7 +28,7 @@
                     <span>{{ ceil(str_word_count(strip_tags($post->body)) / 200) }} min read</span>
                 </div>
 
-                <p class="mt-2 leading-tight">{!! $post->excerpt !!}</p>
+                <p class="mt-5 leading-tight">{!! $post->excerpt !!}</p>
 
                 <div class="flex mt-4">
                     @foreach($post->tags as $tag)
