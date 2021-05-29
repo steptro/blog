@@ -12,7 +12,10 @@ module.exports = {
             'blog': ['Merriweather', ...defaultTheme.fontFamily.serif]
         },
         extend: {
-
+            colors: {
+                'twitter-blue': '#1DA1F2',
+                'github-gray': '#24292E',
+            },
         },
     },
     variants: {
