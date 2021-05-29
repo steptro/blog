@@ -3,10 +3,11 @@
 @section('title', $post->title)
 
 @push('meta')
-    <meta name="og:title" content="{{ $post->title }}" />
-    <meta name="og:description" content="{{ $post->excerpt }}" />
-    <meta name="og:image" content="{{ url('/') . $post->featured_image }}" />
-    <meta name="og:url" content="{{ url()->full() }}" />
+    <meta property="og:title" content="{{ $post->title }}" />
+    <meta property="og:description" content="{{ $post->excerpt }}" />
+    <meta property="og:image" content="{{ url('/') . $post->featured_image }}" />
+    <meta property="og:url" content="{{ url()->full() }}" />
+    <meta property="og:site_name" content="stephantromer.dev" />
     <meta name="twitter:card" content="summary_large_image" />
 @endpush
 
