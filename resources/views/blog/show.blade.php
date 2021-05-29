@@ -2,9 +2,31 @@
 
 @section('title', $post->title)
 
+@push('meta')
+    <meta name="og:title" content="{{ $post->title }}" />
+    <meta name="og:description" content="{{ $post->excerpt }}" />
+    <meta name="og:image" content="{{ url('/') . $post->featured_image }}" />
+    <meta name="og:url" content="{{ url()->full() }}" />
+    <meta name="twitter:card" content="{{ $post->excerpt }}" />
+@endpush
+
+@push('stylesheets')
+    <style>
+        .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+    </style>
+@endpush
+
 @section('content')
     <section>
         <article class="content leading-loose font-sans">
+            <figure>
+                <img src="{{ $post->featured_image }}" />
+                <figcaption class="text-xs mt-2 text-gray-400">{{ $post->featured_image_caption }}</figcaption>
+            </figure>
+
             <h1 class="font-serif leading-normal text-4xl pt-4 mb-0">{{ $post->title }}</h1>
             <div class="flex text-sm font-light text-gray-400">
                 <span>Updated: {!! $post->updated_at->formatLocalized('%e %B %Y %H:%I') !!}</span>
