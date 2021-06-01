@@ -28,8 +28,14 @@
         methods: {
             addReaction(type) {
                 if (!this.reacted) {
+                    const headers = {
+                        'Content-Type': 'application/json',
+                    };
+
                     axios
-                        .post('/api/reaction/' + this.postId + '/' + type)
+                        .post('/api/reaction/' + this.postId + '/' + type, {
+                            headers
+                        })
                         .then(() => {
                             if (type === 'like') {
                                 this.likesCount++;

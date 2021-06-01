@@ -16,7 +16,7 @@ class ReactionController extends Controller
             abort(400, "Reaction type not allowed");
         }
 
-        $reaction = Reaction::where('post_id', $winkPost->id)->where('type', $type)->where('ip', $request->ip())->first();
+        $reaction = Reaction::where('post_id', $winkPost->id)->where('ip', $request->ip())->first();
 
         if ($reaction === null) {
             $reaction = new Reaction([
