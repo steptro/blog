@@ -41,6 +41,8 @@
             </div>
         </article>
     </section>
+
+    <reactions post-id="{{ $post->id }}" likes="{{ $reactions['like'] ?? 0 }}" loves="{{ $reactions['love'] ?? 0 }}"></reactions>
 @endsection
 
 @push('scripts')

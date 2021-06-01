@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\WinkPostAdapter;
 use Wink\WinkPost;
 
 class WinkController extends Controller
@@ -18,12 +19,23 @@ class WinkController extends Controller
 
     public function show($slug)
     {
-        $post = WinkPost::with('tags')
+        $post = WinkPostAdapter::with('tags', 'reactions')
             ->live()
             ->whereSlug($slug)
             ->firstOrFail();
 
-        return view('blog.show', compact('post'));
+
+        $reactions = [];
+
+        foreach ($post->reactions as $reaction) {
+            if (!array_key_exists($reaction->type, $reactions)) {
+                $reactions[$reaction->type] = 1;
+            } else {
+                $reactions[$reaction->type]++;
+            }
+        }
+
+        return view('blog.show', compact(['post', 'reactions']));
     }
 
     public function preview($slug)
