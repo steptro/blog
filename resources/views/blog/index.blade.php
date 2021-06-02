@@ -8,7 +8,7 @@
             <img src="{{ asset('img/stephan.jpg') }}" class="mx-auto rounded-full mb-4 sm:mb-0 h-48 hidden sm:block"/>
         </div>
         <div class="sm:ml-6 self-center">
-            I am Stephan Tromer, a software engineer at Deloitte Netherlands. In this blog, I will be sharing my experiences in the world of software engineering. My goal for this blog is for you to learn something new and help you in the software engineering world.
+            I am Stephan Tromer, a software engineer at Deloitte Netherlands. In this blog, I will be sharing my experiences in the world of software engineering. My goal for this blog is for you to learn something new which might help you in the software engineering world. During my day-to-day work I am primarily working with Java and Spring Boot using a distributed systems architecture.
 
             <div class="text-4xl mt-4 flex justify-center">
                 <a href="https://github.com/steptro" class="mr-4 text-github-gray hover:text-gray-400" target="_blank"><i class="fab fa-github"></i></a>
