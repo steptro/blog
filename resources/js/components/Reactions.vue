@@ -45,7 +45,7 @@
                     axios
                         .post('/api/reaction/' + this.postId, {
                             type,
-                            // deviceId,
+                            deviceId,
                         })
                         .then(() => {
                             if (type === 'like') {
