@@ -13,7 +13,7 @@ class Reaction extends Model
     protected $fillable = [
         'post_id',
         'type',
-        'ip'
+        'device_id'
     ];
 
     public function post() {

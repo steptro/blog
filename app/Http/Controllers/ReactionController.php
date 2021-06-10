@@ -8,21 +8,20 @@ use Illuminate\Http\Request;
 
 class ReactionController extends Controller
 {
-    public function addReaction(WinkPostAdapter $winkPost, string $type, Request $request)
+    public function addReaction(WinkPostAdapter $winkPost, Request $request)
     {
-        $types = ['like', 'love'];
+        $validator = $request->validate([
+            'type' => ['required', 'in:like,love'],
+            'deviceId' => ['required'],
+        ]);
 
-        if (!in_array($type, $types)) {
-            abort(400, "Reaction type not allowed");
-        }
-
-        $reaction = Reaction::where('post_id', $winkPost->id)->where('ip', $request->ip())->first();
+        $reaction = Reaction::where('post_id', $winkPost->id)->where('device_id', $request->get('deviceId'))->first();
 
         if ($reaction === null) {
             $reaction = new Reaction([
                 'post_id' => $winkPost->id,
-                'type' => $type,
-                'ip' => $request->ip()
+                'type' => $request->get('type'),
+                'device_id' => $request->get('deviceId')
             ]);
 
             $reaction->save();
