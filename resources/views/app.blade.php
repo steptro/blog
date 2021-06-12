@@ -25,7 +25,7 @@
     </div>
 
     <script src="{{ asset('js/app.js') }}"></script>
-    @if(!env('local'))
+    @if(env('production'))
         <script async defer data-website-id="3df951b3-d405-4fb9-a4f6-bbdc60dadba0" src="https://umami.stephantromer.dev/umami.js"></script>
     @endif
     @stack('scripts')
