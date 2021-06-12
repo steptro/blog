@@ -12,32 +12,6 @@
     <meta name="twitter:card" content="summary_large_image" />
 @endpush
 
-@push('stylesheets')
-    <style>
-        .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-            margin-bottom: 0;
-            font-weight: 500;
-        }
-
-        .prose img {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .prose p code {
-            padding: .2em .4em;
-            border-radius: 6px;
-            background: #f6f8fa;
-            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }
-
-        .prose p code:after, .prose p code:before {
-            content: "";
-        }
-
-    </style>
-@endpush
-
 @section('content')
     <section>
         <article class="content leading-loose font-sans">
