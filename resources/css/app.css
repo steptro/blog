@@ -17,8 +17,11 @@
     margin-right: auto;
 }
 
-.prose p code {
+.prose pre code {
     white-space: pre-wrap;
+}
+
+.prose p code {
     padding: .2em .4em;
     border-radius: 6px;
     background: #f6f8fa;
