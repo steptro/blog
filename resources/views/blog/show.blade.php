@@ -23,6 +23,16 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .prose p code {
+            padding: .2em .4em;
+            border-radius: 6px;
+            background: rgba(240, 246, 252, 0.15)
+        }
+        .prose p code:after, .prose p code:before {
+            content: "";
+        }
+
     </style>
 @endpush
 
