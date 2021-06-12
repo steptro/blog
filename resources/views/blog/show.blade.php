@@ -27,8 +27,10 @@
         .prose p code {
             padding: .2em .4em;
             border-radius: 6px;
-            background: rgba(240, 246, 252, 0.15)
+            background: #f6f8fa;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
+
         .prose p code:after, .prose p code:before {
             content: "";
         }
