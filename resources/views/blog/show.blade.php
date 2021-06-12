@@ -18,6 +18,11 @@
             margin-bottom: 0;
             font-weight: 500;
         }
+
+        .prose img {
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 @endpush
 
