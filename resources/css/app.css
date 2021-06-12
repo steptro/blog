@@ -18,6 +18,7 @@
 }
 
 .prose p code {
+    white-space: pre-wrap;
     padding: .2em .4em;
     border-radius: 6px;
     background: #f6f8fa;
