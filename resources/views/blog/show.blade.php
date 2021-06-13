@@ -38,6 +38,9 @@
 
 @push('scripts')
     <script>
+        hljs.configure({
+            languages: ['java'],
+        });
         hljs.highlightAll();
     </script>
 @endpush
