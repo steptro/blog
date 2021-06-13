@@ -22,11 +22,10 @@
 }
 
 .prose pre code {
-    white-space: pre-wrap;
     padding: .8571429em 1.1428571em;
 }
 
-.prose p code {
+.prose code {
     padding: .2em .4em;
     border-radius: 6px;
     background: #f6f8fa;
@@ -35,6 +34,6 @@
     @apply font-normal;
 }
 
-.prose p code:after, .prose p code:before {
+.prose code:after, .prose code:before {
     content: "";
 }
