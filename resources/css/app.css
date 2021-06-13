@@ -17,8 +17,13 @@
     margin-right: auto;
 }
 
+.prose pre {
+    padding: 0;
+}
+
 .prose pre code {
     white-space: pre-wrap;
+    padding: .8571429em 1.1428571em;
 }
 
 .prose p code {
