@@ -27,6 +27,15 @@
     <script src="{{ asset('js/app.js') }}"></script>
     @if(config('app.env') == 'production')
         <script async defer data-website-id="3df951b3-d405-4fb9-a4f6-bbdc60dadba0" src="https://umami.stephantromer.dev/umami.js"></script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQ7SSDR7WN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-PQ7SSDR7WN');
+        </script>
     @endif
     @stack('scripts')
 </body>
