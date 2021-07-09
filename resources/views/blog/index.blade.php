@@ -12,7 +12,7 @@
 
             <div class="text-4xl mt-4 flex justify-center">
                 <a href="https://github.com/steptro" title="GitHub" rel="noreferrer" class="mr-4 text-github-gray hover:text-gray-400" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/StephanTromer" title="Twitter" ref="noreferrer" class="text-twitter-blue hover:text-gray-400" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/StephanTromer" title="Twitter" rel="noreferrer" class="text-twitter-blue hover:text-gray-400" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </div>
