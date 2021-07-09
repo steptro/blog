@@ -33,4 +33,6 @@
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType image/ico "access plus 1 month"
   ExpiresByType image/x-icon "access plus 1 month"
+  ExpiresByType application/font-woff2 "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 month"
 </IfModule>
