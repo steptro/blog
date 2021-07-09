@@ -11,8 +11,8 @@
             I am Stephan Tromer, a software engineer at Deloitte Netherlands. In this blog, I will be sharing my experiences in the world of software engineering. My goal for this blog is for you to learn something new which might help you in the software engineering world. During my day-to-day work I am primarily working with Java and Spring Boot using a distributed systems architecture.
 
             <div class="text-4xl mt-4 flex justify-center">
-                <a href="https://github.com/steptro" class="mr-4 text-github-gray hover:text-gray-400" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/StephanTromer" class="text-twitter-blue hover:text-gray-400" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/steptro" title="GitHub" rel="noreferrer" class="mr-4 text-github-gray hover:text-gray-400" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/StephanTromer" title="Twitter" ref="noreferrer" class="text-twitter-blue hover:text-gray-400" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </div>
