@@ -32,7 +32,7 @@ class CacheControl
         $publicAssetPrefixes = ['img', 'js', 'css'];
 
         foreach ($publicAssetPrefixes as $prefix) {
-            if (str_starts_with($url, $prefix)) {
+            if (str_starts_with($url, '/' . $prefix)) {
                 return true;
             }
         }
