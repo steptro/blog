@@ -47,7 +47,6 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('web')
                 ->namespace($this->namespace)
-                ->middleware(CacheControl::class)
                 ->group(base_path('routes/web.php'));
         });
 
