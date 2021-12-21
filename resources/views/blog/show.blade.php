@@ -27,7 +27,7 @@
                 <span>{{ ceil(str_word_count(strip_tags($post->body)) / 200) }} min read</span>
             </div>
 
-            <div class="prose md:mt-4">
+            <div id="content-body" class="prose md:mt-4">
                 {!! parsedown($post->body) !!}
             </div>
         </article>
@@ -42,5 +42,10 @@
             languages: ['java'],
         });
         hljs.highlightAll();
+
+        const links = document.getElementById('content-body').getElementsByTagName('a');
+        for (let i = 0; i < links.length; i++) {
+            links[i].target = "_blank";
+        }
     </script>
 @endpush
