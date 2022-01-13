@@ -28,7 +28,7 @@
             </div>
 
             <div id="content-body" class="prose md:mt-4">
-                {!! parsedown($post->body) !!}
+                {!! markdown($post->body) !!}
             </div>
         </article>
     </section>
@@ -45,7 +45,9 @@
 
         const links = document.getElementById('content-body').getElementsByTagName('a');
         for (let i = 0; i < links.length; i++) {
-            links[i].target = "_blank";
+            if (!links[i].href.startsWith('{{ env('APP_URL') }}')) {
+                links[i].target = "_blank";
+            }
         }
     </script>
 @endpush
