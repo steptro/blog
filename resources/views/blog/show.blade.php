@@ -22,7 +22,7 @@
 
             <h1 class="font-serif leading-normal text-4xl pt-4 mb-0">{{ $post->title }}</h1>
             <div class="flex text-sm font-light text-gray-400">
-                <span>Updated: {!! $post->updated_at->formatLocalized('%e %B %Y %H:%I') !!}</span>
+                <span>Updated: {!! $post->updated_at->formatLocalized('%e %B %Y %H:%M') !!}</span>
                 <span class="mx-2">-</span>
                 <span>{{ ceil(str_word_count(strip_tags($post->body)) / 200) }} min read</span>
             </div>
